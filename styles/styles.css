@@ -221,6 +221,11 @@ footer p {
     letter-spacing: 0.5rem;
   }
 
+header {
+  padding: 0rem;
+  background-color: #ffffff;
+}
+
   header img {
     display: block;
     margin-right: auto;
@@ -235,10 +240,13 @@ footer p {
 
   .flex-box {
     width: 100%;
+    margin: 0rem;
   }
 
   .flex-box:nth-child(2n+1) {
     justify-content: center;
+    background-color: #1b447f;
+    border-radius: 2rem;
   }
 
 .contact {
@@ -277,6 +285,7 @@ footer p {
     grid-row: 2 / 3;
     padding: 2rem;
   }
+
   h1 {
     font-size: 4rem;
   }
@@ -300,6 +309,19 @@ footer p {
     line-height: 2.5rem;
       color: #444444;
   }
+
+  aside h2 {
+    font-size: 3rem;
+  }
+
+  aside h3 {
+    font-size: 2.5rem;
+  }
+
+  aside p {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
   blockquote {
     float: none;
     text-align: center;
@@ -311,6 +333,11 @@ footer p {
     color: #03a3df;
   }
 
+  .attribution {
+    font-size: 1.5rem;
+  }
+
+
 footer {
   background-color: #1b447f;
   background-image: none;
@@ -318,13 +345,14 @@ footer {
 }
 
 footer p {
+    padding-top: 1rem;
     width: 100%;
     font-weight: lighter;
-    line-height: 3rem;
-    font-size: 1rem;
+    line-height: 4rem;
+    font-size: 2rem;
   }
 
-  footer img {
+footer img {
     display: block;
     width: 75%;
     margin-left: auto;
