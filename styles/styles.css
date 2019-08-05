@@ -60,7 +60,7 @@ header {
 }
 
 .contact a:hover {
-  color: #000000;
+  color: #444444;
 }
 
 header .flex-container {
@@ -120,21 +120,23 @@ blockquote {
   color: #03a3df;
 }
 
-.attribution {
-  display: block;
-  font-size: .75rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-  color: #03a3df;
+.quote-mark {
+  color: #1b447f;
+  font-weight: bold;
 }
 
-aside {
-  padding: 1rem;
+.attribution {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #03a3df;
+  padding-top: 1.5rem;
 }
 
 aside h2 {
   font-family: 'Comfortaa', cursive;
-  color: #ffffff;
+  color: #1b447f;
   font-size: 2rem;
 }
 
@@ -142,24 +144,33 @@ aside h3 {
   font-family: 'Comfortaa', cursive;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #444444;
 }
 
 aside p {
   font-family: 'Comfortaa', cursive;
   font-size: 1rem;
-  color: #ffffff;
-  line-height: normal;
+  color: #444444;
+  line-height: 1.5rem;
 }
 
-aside strong {
-  font-family: 'Comfortaa', cursive;
-  color: #ffffff;
+article img {
+  display: block;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.instructor {
+  width: 200px;
+  height: 200px;
+  float: right;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 20rem auto;
+  grid-template-columns: 33% auto;
   grid-template-rows: auto auto;
   grid-gap: 1rem;
   background-color: #ffffff;
@@ -172,19 +183,31 @@ aside strong {
 }
 
 .grid-item-2 {
-  background-color: #03a3df;
-  border-radius: 25px;
+  background-image: linear-gradient(#DDDDDD, #ffffff);
+  border-radius: 1rem;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  padding: 2rem;
 }
 
 .grid-item-3 {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  padding: 0rem 4rem 0rem;
+  padding: 0rem 0rem 0rem 4rem;
 }
 
-.one-column {
-  max-width: 18rem;
-  border-radius: 25px;
+footer {
+  background-image: url('../images/footer-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 2rem;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.5rem;
+  width: 50%;
+  font-weight: bold;
 }
