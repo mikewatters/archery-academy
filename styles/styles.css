@@ -63,27 +63,29 @@ header {
   color: #444444;
 }
 
-header .flex-container {
+.flex-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-header .flex-box {
+.flex-box {
   width: auto;
   height: auto;
   padding: 1rem 2rem 1rem;
+  margin: 1rem;
   overflow: visible;
-  transition: background-color 1.5s ease-out;
 }
 
-header .flex-box:nth-child(2n+1) {
-
+.flex-box:nth-child(2n+1) {
+  padding: 2rem;
 }
 
-header .flex-box:nth-child(2n+2) {
+.flex-box:nth-child(2n+2) {
   background-color: #ecb722;
   border-radius: 25px;
+  padding: 2rem;
+  transition: background-color 1.5s ease-out;
 }
 
 nav {
@@ -171,7 +173,6 @@ article img {
 .grid-container {
   display: grid;
   grid-template-columns: 33% auto;
-  grid-template-rows: auto auto;
   grid-gap: 1rem;
   background-color: #ffffff;
   padding: 2rem;
@@ -201,7 +202,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  padding: 2rem;
+  padding: 0rem;
 }
 
 footer p {
@@ -210,4 +211,72 @@ footer p {
   line-height: 1.5rem;
   width: 50%;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-container {
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .flex-box {
+    width: 100%;
+  }
+
+  .flex-box:nth-child(2n+1) {
+    justify-content: center;
+  }
+
+  .flex-box:nth-child(2n+2) {
+    background-color: #ecb722;
+    border-radius: 25px;
+  }
+
+.contact {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact a {
+  padding-top: 1rem;
+  font-size: 5rem;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1rem;
+    background-color: #ffffff;
+    padding: 2rem;
+  }
+
+  .grid-item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .grid-item-2 {
+    background-image: linear-gradient(#DDDDDD, #ffffff);
+    border-radius: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 2rem;
+  }
+
+  .grid-item-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 2rem;
+  }
+
+  blockquote {
+    float: none;
+    text-align: center;
+    padding: 0rem;
+    margin: 0;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #03a3df;
+  }
 }
