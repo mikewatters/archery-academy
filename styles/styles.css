@@ -202,7 +202,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  padding: 0rem;
+  padding: 2rem;
 }
 
 footer p {
@@ -213,7 +213,21 @@ footer p {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 100px) and (max-width: 1024px) {
+
+  nav {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+  }
+
+  header img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
+
   .flex-container {
     flex-flow: column;
     justify-content: center;
@@ -225,11 +239,6 @@ footer p {
 
   .flex-box:nth-child(2n+1) {
     justify-content: center;
-  }
-
-  .flex-box:nth-child(2n+2) {
-    background-color: #ecb722;
-    border-radius: 25px;
   }
 
 .contact {
@@ -278,5 +287,25 @@ footer p {
     font-size: 3rem;
     font-weight: lighter;
     color: #03a3df;
+  }
+
+footer {
+  background-color: #1b447f;
+  background-image: none;
+  padding: 4rem;
+}
+
+footer p {
+    width: 100%;
+    font-weight: lighter;
+    line-height: 3rem;
+    font-size: .75rem;
+  }
+
+  footer img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
