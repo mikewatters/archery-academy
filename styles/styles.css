@@ -242,7 +242,7 @@ footer p {
   }
 
 .contact {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -277,7 +277,29 @@ footer p {
     grid-row: 2 / 3;
     padding: 2rem;
   }
+  h1 {
+    font-size: 4rem;
+  }
 
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  ul {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+      color: #444444;
+  }
   blockquote {
     float: none;
     text-align: center;
@@ -299,7 +321,7 @@ footer p {
     width: 100%;
     font-weight: lighter;
     line-height: 3rem;
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   footer img {
