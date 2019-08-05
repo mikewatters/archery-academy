@@ -42,6 +42,7 @@ ul {
 header {
   background-color: #1b447f;
   padding: 2rem;
+  border-radius: 2rem;
 }
 
 .contact {
@@ -63,9 +64,17 @@ header {
   color: #444444;
 }
 
+.contact-phone {
+  color: #444444;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: right;
+  font-family: 'Comfortaa', cursive;
+  line-height: normal;
+}
+
 .contact-phone a {
   color: #444444;
-  font-size: 1rem;
 }
 
 .flex-container {
@@ -163,7 +172,7 @@ aside p {
 
 article img {
   display: block;
-  border-radius: 1rem;
+  border-radius: 2rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -190,7 +199,7 @@ article img {
 
 .grid-item-2 {
   background-image: linear-gradient(#DDDDDD, #ffffff);
-  border-radius: 1rem;
+  border-radius: 2rem;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   padding: 2rem;
@@ -208,6 +217,7 @@ footer {
   background-attachment: fixed;
   background-size: 100% 100%;
   padding: 2rem;
+  border-radius: 2rem;
 }
 
 footer p {
@@ -264,6 +274,14 @@ header {
   font-size: 5rem;
 }
 
+.contact-phone {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-phone a {
+  color: #444444;
+}
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
