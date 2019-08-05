@@ -297,7 +297,6 @@ header {
 
   .grid-item-2 {
     background-image: linear-gradient(#DDDDDD, #ffffff);
-    border-radius: 1rem;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     padding: 2rem;
