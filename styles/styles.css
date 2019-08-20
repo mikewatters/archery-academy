@@ -87,7 +87,7 @@ header {
   width: auto;
   height: auto;
   padding: 1rem 2rem 1rem;
-  margin: 1rem;
+  margin: 0rem 1rem 1rem 1rem;
   overflow: visible;
 }
 
@@ -133,12 +133,7 @@ blockquote {
   width: 30rem;
   font-size: 2rem;
   font-weight: lighter;
-  color: #03a3df;
-}
-
-.quote-mark {
   color: #1b447f;
-  font-weight: bold;
 }
 
 .attribution {
@@ -146,28 +141,28 @@ blockquote {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #03a3df;
+  color: #1b447f;
   padding-top: 1.5rem;
 }
 
 aside h2 {
   font-family: 'Comfortaa', cursive;
   color: #1b447f;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 aside h3 {
   font-family: 'Comfortaa', cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #444444;
 }
 
 aside p {
   font-family: 'Comfortaa', cursive;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #444444;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
 }
 
 article img {
@@ -226,6 +221,28 @@ footer p {
   line-height: 1.5rem;
   width: 50%;
   font-weight: bold;
+}
+
+.skip-link {
+position: relative;
+left: -10000px;
+top: auto;
+}
+
+.skip-link:focus,.skip-link:active,.skip-link:hover {
+  left: 0;
+  color: #ecb722;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 @media all and (min-width: 100px) and (max-width: 1024px) {
@@ -333,15 +350,15 @@ header {
   }
 
   aside h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   aside h3 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   aside p {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 4rem;
   }
   blockquote {
@@ -352,7 +369,6 @@ header {
     width: 100%;
     font-size: 3rem;
     font-weight: lighter;
-    color: #03a3df;
   }
 
   .attribution {
